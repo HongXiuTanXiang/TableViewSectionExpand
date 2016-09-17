@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fDG-3r-CS3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rKu-oT-Hob">
+            <objects>
+                <navigationController id="fDG-3r-CS3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="54C-de-QiM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FTc-RH-gtW" kind="relationship" relationship="rootViewController" id="NLM-IS-ckm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rot-Mt-2fp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="472"/>
+        </scene>
+        <!--Expand Table View Controller-->
+        <scene sceneID="q3c-fz-yFT">
+            <objects>
+                <tableViewController storyboardIdentifier="ExpandTableViewController" id="FTc-RH-gtW" customClass="ExpandTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="50" sectionFooterHeight="1" id="dgf-tl-7rS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="FTc-RH-gtW" id="KzG-mG-BCz"/>
+                            <outlet property="delegate" destination="FTc-RH-gtW" id="7Jk-Cq-sX5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="RAf-g0-d4E"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlJ-Fv-6Iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="472"/>
+        </scene>
+    </scenes>
+</document>
